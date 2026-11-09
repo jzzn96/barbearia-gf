@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barbearia Gilmar Fongaro | Joinville - SC</title>
+  <meta name="description" content="Barbearia Gilmar Fongaro em Joinville - SC: corte clássico, barba na navalha e toalha quente. Agende pelo WhatsApp." />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            noir: '#0a0a0a',
+            graphite: '#161616',
+            steel: '#232323',
+            amber: { gold: '#c9a24b', soft: '#e3c778' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;700;900&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <style>
+    body { background:#0a0a0a; color:#e5e5e5; }
+    .btn { transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease, border-color .25s ease; }
+    .btn:hover { transform: translateY(-3px) scale(1.03); }
+    .btn:active { transform: translateY(0) scale(.99); }
+    .gold-line { height:1px; background:linear-gradient(90deg, transparent, #c9a24b, transparent); }
+    .grain::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.05;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+  </style>
+</head>
+
+<body class="font-sans antialiased">
+
+  <!-- ============ NAV ============ -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-noir/70 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+      <a href="#inicio" class="font-display text-xl font-bold tracking-wide text-white">
+        <i class="fa-solid fa-scissors text-amber-gold mr-2"></i>GILMAR <span class="text-amber-gold">FONGARO</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-neutral-300">
+        <a href="#historia" class="hover:text-amber-gold transition-colors">Nossa História</a>
+        <a href="#avaliacoes" class="hover:text-amber-gold transition-colors">Avaliações</a>
+        <a href="#localizacao" class="hover:text-amber-gold transition-colors">Localização</a>
+      </nav>
+      <!-- TROQUE: 5547996478350 pelo WhatsApp real (DDI + DDD + número, só dígitos) -->
+      <a href="https://wa.me/5547996478350?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Gilmar%20Fongaro."
+         target="_blank" rel="noopener"
+         class="btn hidden sm:inline-flex items-center gap-2 text-sm font-medium border border-amber-gold text-amber-gold px-4 py-2 rounded-full hover:bg-amber-gold hover:text-noir">
+        <i class="fa-brands fa-whatsapp"></i> Agendar
+      </a>
+    </div>
+  </header>
+
+  <!-- ============ 1. HERO ============ -->
+  <section id="inicio" class="relative min-h-screen flex items-center justify-center text-center overflow-hidden grain">
+    <!-- Imagem de fundo (Unsplash) - troque por foto da sua barbearia se desejar -->
+    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1920&q=80"
+         alt="Barbeiro atendendo cliente em barbearia clássica"
+         class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-gradient-to-b from-noir/80 via-noir/70 to-noir"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto px-5 pt-24 pb-16">
+      <p class="uppercase tracking-[0.4em] text-xs sm:text-sm text-amber-gold mb-6">
+        <span class="inline-block w-8 h-px bg-amber-gold align-middle mr-3"></span>
+        Joinville · SC
+        <span class="inline-block w-8 h-px bg-amber-gold align-middle ml-3"></span>
+      </p>
+      <h1 class="font-display font-black text-4xl sm:text-6xl lg:text-7xl leading-[1.05] text-white">
+        A Arte da <span class="text-amber-gold italic">Navalha</span><br class="hidden sm:block" /> Feita com Tradição
+      </h1>
+      <p class="mt-6 text-neutral-300 text-base sm:text-lg max-w-xl mx-auto font-light">
+        Corte clássico, barba impecável e o ritual da toalha quente. Um espaço para quem leva o estilo a sério.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <!-- TROQUE: número do WhatsApp do barbeiro e ajuste a mensagem pronta se quiser -->
+        <a href="https://wa.me/5547996478350?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Gilmar%20Fongaro."
+           target="_blank" rel="noopener"
+           class="btn inline-flex items-center justify-center gap-3 bg-amber-gold text-noir font-semibold px-8 py-4 rounded-full shadow-lg shadow-amber-gold/20 hover:bg-amber-soft hover:shadow-amber-gold/40">
+          <i class="fa-brands fa-whatsapp text-xl"></i> Agendar pelo WhatsApp
+        </a>
+        <a href="#localizacao"
+           class="btn inline-flex items-center justify-center gap-3 border border-white/30 text-white px-8 py-4 rounded-full hover:border-amber-gold hover:text-amber-gold">
+          <i class="fa-solid fa-location-dot"></i> Ver Localização
+        </a>
+      </div>
+    </div>
+
+    <a href="#historia" class="absolute bottom-6 left-1/2 -translate-x-1/2 text-amber-gold/70 animate-bounce" aria-label="Rolar para baixo">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ============ 2. HISTÓRIA ============ -->
+  <section id="historia" class="py-20 sm:py-28 bg-graphite">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=900&q=80"
+             alt="Barba sendo feita com navalha"
+             class="w-full aspect-[4/5] object-cover rounded-sm grayscale-[40%]" loading="lazy" />
+        <div class="absolute -bottom-4 -right-4 w-full h-full border border-amber-gold/40 -z-10 hidden sm:block"></div>
+      </div>
+
+      <div>
+        <p class="uppercase tracking-[0.3em] text-xs text-amber-gold mb-4">Nossa História</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-white leading-tight">
+          Mais que um corte. <br />Um ritual.
+        </h2>
+        <div class="gold-line w-24 my-6"></div>
+        <div class="space-y-4 text-neutral-300 font-light leading-relaxed">
+          <p>
+            Nascemos da vontade de resgatar o que as barbearias tinham de melhor: o tempo, a conversa e o cuidado
+            artesanal. Aqui, cada atendimento é feito sem pressa, do primeiro corte ao último acabamento.
+          </p>
+          <p>
+            A navalha afiada, a toalha quente que abre os poros, o óleo aromático e a espuma batida na hora fazem parte
+            de um ritual que atravessa gerações — e que devolvemos ao homem moderno com técnica e precisão.
+          </p>
+          <p>
+            Nosso ambiente foi pensado para você: couro, madeira, boa música e uma bebida gelada enquanto cuidamos do
+            seu visual. Você chega como cliente e sai como parte da casa.
+          </p>
+        </div>
+
+        <!-- Redes sociais -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="https://www.instagram.com/barbeariagf9" target="_blank" rel="noopener"
+             class="btn inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full text-white font-medium bg-gradient-to-r from-fuchsia-600 via-pink-600 to-orange-500 hover:shadow-lg hover:shadow-pink-600/30">
+            <i class="fa-brands fa-instagram text-xl"></i> Seguir @Barbeariagf9
+          </a>
+          <!-- Facebook ainda não está ativo. Quando criar a página, adicione aqui o botão com o link real. -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. AVALIAÇÕES ============ -->
+  <section id="avaliacoes" class="py-20 sm:py-28 bg-noir relative">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="text-center max-w-2xl mx-auto">
+        <p class="uppercase tracking-[0.3em] text-xs text-amber-gold mb-4">Prova Social</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-white">Quem passa pela cadeira, recomenda</h2>
+
+        <div class="mt-8 inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-5 border border-amber-gold/30 bg-graphite px-6 py-4 rounded-full">
+          <i class="fa-brands fa-google text-2xl text-white"></i>
+          <div class="text-amber-gold text-lg tracking-widest" aria-label="5 estrelas">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <span class="text-white font-medium">Avaliada em 5.0 Estrelas no Google</span>
+        </div>
+      </div>
+
+      <div class="mt-14 grid gap-6 md:grid-cols-3">
+        <!-- Depoimentos de exemplo: substitua por avaliações reais (com autorização dos clientes) -->
+        <article class="bg-graphite border border-white/5 p-7 rounded-sm hover:border-amber-gold/40 transition-colors">
+          <div class="text-amber-gold text-sm mb-4">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-neutral-300 font-light leading-relaxed">
+            “Melhor barba que já fiz na vida. A toalha quente e a navalha são outro nível. Atendimento pontual e ambiente impecável.”
+          </p>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-steel flex items-center justify-center text-amber-gold font-semibold">R</div>
+            <div><p class="text-white text-sm font-medium">Rafael M.</p><p class="text-xs text-neutral-500">Cliente há 2 anos</p></div>
+          </div>
+        </article>
+
+        <article class="bg-graphite border border-white/5 p-7 rounded-sm hover:border-amber-gold/40 transition-colors">
+          <div class="text-amber-gold text-sm mb-4">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-neutral-300 font-light leading-relaxed">
+            “Cortes sempre alinhados com o que eu peço, sem enrolação. Saio de lá me sentindo outra pessoa. Virei cliente fiel.”
+          </p>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-steel flex items-center justify-center text-amber-gold font-semibold">L</div>
+            <div><p class="text-white text-sm font-medium">Lucas P.</p><p class="text-xs text-neutral-500">Cliente há 1 ano</p></div>
+          </div>
+        </article>
+
+        <article class="bg-graphite border border-white/5 p-7 rounded-sm hover:border-amber-gold/40 transition-colors">
+          <div class="text-amber-gold text-sm mb-4">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-neutral-300 font-light leading-relaxed">
+            “Ambiente incrível, música boa e um cuidado que não se vê em qualquer lugar. Levei meu filho e ele adorou também.”
+          </p>
+          <div class="mt-6 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-steel flex items-center justify-center text-amber-gold font-semibold">A</div>
+            <div><p class="text-white text-sm font-medium">André S.</p><p class="text-xs text-neutral-500">Cliente há 6 meses</p></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-12 text-center">
+        <!-- TROQUE: link de avaliação do Google. Pegue em: Google Meu Negócio > "Pedir avaliações" (g.page/r/XXXX/review)
+             ou use https://search.google.com/local/writereview?placeid=SEU_PLACE_ID -->
+        <a href="https://www.google.com/search?q=BarbeariaGF9" target="_blank" rel="noopener"
+           class="btn inline-flex items-center gap-3 bg-white text-noir font-semibold px-8 py-4 rounded-full hover:bg-amber-soft hover:shadow-lg hover:shadow-amber-gold/30">
+          <i class="fa-brands fa-google"></i> Deixe sua Avaliação no Google
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. LOCALIZAÇÃO E CONTATO ============ -->
+  <section id="localizacao" class="bg-graphite">
+    <div class="max-w-6xl mx-auto px-5 py-20 sm:py-28">
+      <div class="text-center mb-14">
+        <p class="uppercase tracking-[0.3em] text-xs text-amber-gold mb-4">Visite-nos</p>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl text-white">Localização e Horários</h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-10 items-stretch">
+        <!-- Info -->
+        <div class="flex flex-col justify-between gap-8">
+          <div>
+            <h3 class="font-display text-xl text-white mb-5"><i class="fa-regular fa-clock text-amber-gold mr-3"></i>Horário de Atendimento</h3>
+            <!-- TROQUE: horários reais -->
+            <ul class="divide-y divide-white/10 text-neutral-300">
+              <li class="flex justify-between py-3"><span>Terça a Sexta</span><span class="text-white">09h às 20h</span></li>
+              <li class="flex justify-between py-3"><span>Sábado</span><span class="text-white">08h às 16h</span></li>
+              <li class="flex justify-between py-3"><span>Domingo e Segunda</span><span class="text-neutral-500">Fechado</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-display text-xl text-white mb-3"><i class="fa-solid fa-location-dot text-amber-gold mr-3"></i>Endereço</h3>
+            <!-- TROQUE: endereço real -->
+            <p class="text-neutral-300 font-light">Rua Arthur Zoefeld, 728 – Sala 2<br />Iririú, Joinville - SC</p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <!-- TROQUE: link de rota. Google Maps: https://www.google.com/maps/dir/?api=1&destination=ENDERECO+CODIFICADO
+                 Waze: https://waze.com/ul?q=ENDERECO+CODIFICADO&navigate=yes -->
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Rua+Arthur+Zoefeld+728+Iririu+Joinville+SC" target="_blank" rel="noopener"
+               class="btn inline-flex items-center justify-center gap-3 bg-amber-gold text-noir font-semibold px-6 py-4 rounded-full hover:bg-amber-soft hover:shadow-lg hover:shadow-amber-gold/30">
+              <i class="fa-solid fa-route"></i> Traçar rota no Google Maps
+            </a>
+            <a href="https://waze.com/ul?q=Rua+Arthur+Zoefeld+728+Iririu+Joinville+SC&navigate=yes" target="_blank" rel="noopener"
+               class="btn inline-flex items-center justify-center gap-3 border border-white/30 text-white px-6 py-4 rounded-full hover:border-amber-gold hover:text-amber-gold">
+              <i class="fa-brands fa-waze"></i> Abrir no Waze
+            </a>
+          </div>
+        </div>
+
+        <!-- Mapa responsivo -->
+        <div class="w-full h-80 sm:h-96 lg:h-full lg:min-h-[420px] border border-amber-gold/30 overflow-hidden">
+          <!-- TROQUE: no Google Maps clique em Compartilhar > Incorporar um mapa > copie apenas o valor de src="..." -->
+          <iframe
+            title="Mapa da localização da barbearia"
+            class="w-full h-full grayscale contrast-125 invert-[.9] hue-rotate-180"
+            src="https://www.google.com/maps?q=Rua+Arthur+Zoefeld+728+Iririu+Joinville+SC&output=embed"
+            style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-noir border-t border-white/5 py-8 text-center text-sm text-neutral-500">
+    <p class="font-display text-white tracking-wide mb-2">BARBEARIA <span class="text-amber-gold">GILMAR FONGARO</span></p>
+    <p class="mb-2">Rua Arthur Zoefeld, 728 – Sala 2 · Iririú, Joinville - SC</p>
+    <p>&copy; <span id="ano"></span> Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão flutuante WhatsApp (mobile-first) -->
+  <!-- TROQUE: mesmo número do WhatsApp -->
+  <a href="https://wa.me/5547996478350?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Gilmar%20Fongaro."
+     target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp"
+     class="btn fixed bottom-5 right-5 z-50 w-14 h-14 rounded-full bg-[#25d366] text-white text-3xl flex items-center justify-center shadow-xl shadow-black/50">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+</body>
+</html>
